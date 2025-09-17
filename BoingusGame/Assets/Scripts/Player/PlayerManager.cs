@@ -2,6 +2,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
+using Unity.Cinemachine;
 
 /*References:
 Title: Local Multiplayer and Split-Screen - new input and Cinemachine 
@@ -41,5 +42,17 @@ public class PlayerManager : MonoBehaviour
         //using the parent of the prefab
         Transform playerPos = player.transform;
         playerPos.position = spawnPoints[players.Count - 1].position;
+
+
+        /*
+        //converting the (bit) layer mask into an integer
+        int layerToAdd = (int)Mathf.Log(playerLayers[players.Count - 1].value, 2);
+
+        //setting the layer
+        playerPos.GetComponentInChildren<CinemachineCamera>().gameObject.layer = layerToAdd;
+
+        //adding the layer
+        playerPos.GetComponentInChildren<Camera>().cullingMask |= 1 << layerToAdd;
+        */
     }
 }
