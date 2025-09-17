@@ -3,11 +3,11 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 /*References:
-Title: 
-Author:
-Date: 
-Code version: 
-Availability: 
+Title: Unity 6 Split-Screen Multiplayer (2–4 Players) with the New Input System 
+Author: Faktory Studios
+Date: 2025, June 25
+Code version: 6000.0.51f1
+Availability: https://www.youtube.com/watch?v=55MPgeVaqpU
 */
 
 [RequireComponent(typeof(Camera))]
