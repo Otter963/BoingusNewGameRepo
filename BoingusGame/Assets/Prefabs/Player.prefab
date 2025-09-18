@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 9153680479806949028}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -568,6 +568,14 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 78966019-9bf4-4777-8646-b1d44a409e83
     m_ActionName: 'UI/PauseGameClose[/Keyboard/escape,/DualSenseGamepadHID/start]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d6810502-c5d7-4cea-8c74-7a981f49e1f9
+    m_ActionName: 'Player/Pickup[/Keyboard/e,/DualSenseGamepadHID/buttonWest]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c8e98f26-76b4-4e49-9142-a3850cbe5eac
+    m_ActionName: 'Player/Throw[/Keyboard/f,/DualSenseGamepadHID/rightTrigger]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

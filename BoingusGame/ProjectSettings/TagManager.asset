@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - CameraZone
+  - CanPickUp
+  - StartingBox
   layers:
   - Default
   - TransparentFX

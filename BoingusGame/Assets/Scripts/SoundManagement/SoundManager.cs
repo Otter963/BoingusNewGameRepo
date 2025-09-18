@@ -12,7 +12,12 @@ Availability: https://www.youtube.com/watch?v=g5WT91Sn3hg
 public enum SoundType
 {
     JUMP,
-    INTERACT
+    OBJECTINBASKET,
+    PLAYERLEAVEVOICE,
+    TUTORIALVOICEONE,
+    TUTORIALVOICETWO,
+    TUTORIALVOICETHREE,
+    VOICEGAMEWIN
 }
 
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]
