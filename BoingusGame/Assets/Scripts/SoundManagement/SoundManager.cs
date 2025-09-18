@@ -17,7 +17,8 @@ public enum SoundType
     TUTORIALVOICEONE,
     TUTORIALVOICETWO,
     TUTORIALVOICETHREE,
-    VOICEGAMEWIN
+    VOICEGAMEWINPLAYERONE,
+    VOICEGAMEWINPLAYERTWO
 }
 
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]

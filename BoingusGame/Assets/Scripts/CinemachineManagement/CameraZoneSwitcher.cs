@@ -28,6 +28,7 @@ public class CameraZoneSwitcher : MonoBehaviour
         {
             CinemachineCamera targetCamera = other.GetComponentInChildren<CinemachineCamera>();
             SwitchToCamera(targetCamera);
+            SoundManager.PlaySound(SoundType.TUTORIALVOICETHREE);
         }
     }
 
