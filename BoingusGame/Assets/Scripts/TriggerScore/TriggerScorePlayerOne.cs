@@ -26,7 +26,6 @@ public class TriggerScorePlayerOne : MonoBehaviour
         {
             playerOneScoreScreen.SetActive(true);
             playerMovement.gameObject.SetActive(false);
-            SoundManager.PlaySound(SoundType.VOICEGAMEWINPLAYERONE);
         }
     }
 

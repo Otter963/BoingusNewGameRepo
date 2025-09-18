@@ -17,6 +17,8 @@ public class CameraZoneSwitcher : MonoBehaviour
 
     public CinemachineCamera[] otherCameras;
 
+    [SerializeField] private GameObject playerControlsCanvas;
+
     private void Start()
     {
         SwitchToCamera(primaryCamera);
@@ -28,6 +30,7 @@ public class CameraZoneSwitcher : MonoBehaviour
         {
             CinemachineCamera targetCamera = other.GetComponentInChildren<CinemachineCamera>();
             SwitchToCamera(targetCamera);
+            playerControlsCanvas.SetActive(false);
             SoundManager.PlaySound(SoundType.TUTORIALVOICETHREE);
         }
     }
