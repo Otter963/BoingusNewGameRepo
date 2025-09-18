@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 6467109684052001381}
   - component: {fileID: 1525628628411857338}
   - component: {fileID: 2074327224726652962}
+  - component: {fileID: 9153680479806949028}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -559,11 +560,35 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 493c539d-5b7a-42ee-b841-5f1821363f8a
+    m_ActionName: 'Player/PauseGame[/Keyboard/escape,/DualSenseGamepadHID/start]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 78966019-9bf4-4777-8646-b1d44a409e83
+    m_ActionName: 'UI/PauseGameClose[/Keyboard/escape,/DualSenseGamepadHID/start]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &9153680479806949028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6631914185378918380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a5df736a9886c3448ba40cc7d114611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerTag: CameraZone
+  primaryCamera: {fileID: 0}
+  otherCameras:
+  - {fileID: 0}
 --- !u!1001 &3959023781597784947
 PrefabInstance:
   m_ObjectHideFlags: 0
