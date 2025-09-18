@@ -160,6 +160,7 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded && inputJump && isJumpButtonPressed)
         {
             playerRB.AddForce(Vector3.up * 20, ForceMode.Impulse);
+            SoundManager.PlaySound(SoundType.JUMP);
 
             isJumpButtonPressed = false;
         }
