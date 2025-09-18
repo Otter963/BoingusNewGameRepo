@@ -79,13 +79,16 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Move input
-        moveInputVector.x = Input.GetAxis("Horizontal");
-        moveInputVector.y = Input.GetAxis("Vertical");
-
-        if (inputJump.Equals(true))
+        if (!PauseMenu.isPaused)
         {
-            isJumpButtonPressed = true;
+            //Move input
+            moveInputVector.x = Input.GetAxis("Horizontal");
+            moveInputVector.y = Input.GetAxis("Vertical");
+
+            if (inputJump.Equals(true))
+            {
+                isJumpButtonPressed = true;
+            }
         }
     }
 
